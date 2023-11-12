@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>fetch test</title>
+  </head>
+  <body>
+    <h1>
+      Fetching data...
+    </h1>
+    <script>
+      console.log('Another customer approaching');
+
+      fetch('https://randomuser.me/api/?results=1')
+        .then(response => response.json())
+        .then(data => console.log(data));
+
+      console.log('Our calued customer, please give me a moment while I get some info back from the Records Dept.');
+    </script>
+  </body>
+
+</html>
